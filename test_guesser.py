@@ -21,5 +21,10 @@ class TestGuesser(unittest.TestCase):
         inp = g.get_input("hi", lambda x: "there")
         self.assertEqual(inp, "there")
         
+    def test_display(self):
+        g = Guesser()
+        msg = g.display_msg("hi", lambda x: x)
+        self.assertEqual(msg, "hi")
+        
 if __name__ == "__main__":
     unittest.main()

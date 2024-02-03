@@ -20,7 +20,7 @@ class Guesser:
         return self.guesses
     
     def display_msg(self, msg, display_func=print):
-        display_func(msg)
+        return display_func(msg)
             
     def run(self):
         inp = self.get_input("Enter a number: ")
